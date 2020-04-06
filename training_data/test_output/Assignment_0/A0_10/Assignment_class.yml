@@ -1,0 +1,11 @@
+!!python/object:Classes.Assignment
+assignment_num: -1
+candidate_questions:
+- A0Q1
+feedbacks: null
+mark: null
+name: Week 0
+question_db: QuestionDB
+question_qids:
+- A0Q1
+questions: []

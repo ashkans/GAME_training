@@ -1,0 +1,68 @@
+\documentclass[a4paper,12pt]{CURSUS}
+
+\usepackage[english]{babel}
+\usepackage{latexsym}
+\usepackage{amsfonts}
+\usepackage{times}
+\usepackage{fancyhdr}
+\usepackage{rotating}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{booktabs}
+
+\textwidth 16.5cm
+\textheight 23cm
+\marginparwidth 0cm
+\topmargin 0.54cm
+\oddsidemargin 0cm
+\evensidemargin 0cm
+\parindent 0pt
+\parskip 5mm
+\headsep 0cm
+\footskip 2cm
+\flushbottom
+
+\newcommand{\BE}{\begin{equation}}
+\newcommand{\EE}{\end{equation}}
+\newcommand{\BI}{\begin{itemize}}
+\newcommand{\EI}{\end{itemize}}
+\newcommand{\BN}{\begin{enumerate}}
+\newcommand{\EN}{\end{enumerate}}
+\newcommand{\D}{\displaystyle}
+
+\renewcommand {\baselinestretch}{1.2}
+
+\renewcommand{\headrulewidth}{0mm}
+\renewcommand{\footrulewidth}{0.2mm}
+
+\pagestyle{fancy}
+\addtolength{\headwidth}{4mm}
+\renewcommand{\chaptermark}[1]{\markboth{#1}{}}
+\fancypagestyle{plain}{
+\fancyhead[R,L]{}
+\fancyfoot[R]{\thepage}
+\fancyfoot[C,L]{}}
+\fancyhead[R,L,C]{}
+\fancyfoot[R]{\thepage}
+\fancyfoot[C,L]{}
+
+\begin{document}
+
+\addtocounter{chapter}{-1}
+\renewcommand{\chaptername}{Assignment}
+\chapter{Week 0}
+
+ \BN
+
+ \item
+
+ \begin{center}
+
+ What is the result of 9 plus 4?
+
+ \end{center}
+
+ \EN
+
+
+\end{document}
