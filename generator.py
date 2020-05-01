@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[11]:
+# In[15]:
 
 
 # import modules
@@ -10,14 +10,11 @@ from os.path import join
 import os, sys, time, yaml, csv
 
 
-# In[ ]:
+# In[16]:
 
 
 settingsFile = sys.argv[1]
-#settingsFile = r'training_data/settings.yaml'
-
-
-# In[12]:
+#settingsFile = r'settings/settings.yaml'
 
 
 with open(settingsFile, 'r') as file:
@@ -33,6 +30,8 @@ assignmentNum = settings['assignmentNum']
 # name 
 title = settings['assignmnetTitle']
 
+questionList = settings['questionList']
+
 with open(settings['studentIDListFile']) as csvfile:
     readCSV = csv.reader(csvfile, delimiter=',')
     studentIDList = [r[0] for r in readCSV]
@@ -40,9 +39,6 @@ with open(settings['studentIDListFile']) as csvfile:
 
 # the questions are using some helper functions which are located in the path of Question_DB, so they should be accessible:
 sys.path.append(join(questionDataBase))
-
-
-# In[14]:
 
 
 # maek sure that the output_dir exists and make the output file name
@@ -55,7 +51,7 @@ for sid in studentIDList:
 
 
     # initialize the assignment class
-    assignment1 = Assignment(questionDataBase, Qlist,name=title ,assignment_num=assignmentNum, studentID=sid)
+    assignment1 = Assignment(questionDataBase, questionList,name=title ,assignment_num=assignmentNum, studentID=sid)
 
     # generate the questions
     assignment1.generate_question_list()
@@ -68,10 +64,4 @@ for sid in studentIDList:
 
     # save assignment
     assignment1.save(join(output_path,'Assignment_class.yml'))
-
-
-# In[ ]:
-
-
-
 
