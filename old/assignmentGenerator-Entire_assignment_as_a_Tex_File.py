@@ -45,10 +45,4 @@ for sid in range(10):
     assignment1.make_assignment_pdf_from_tex_file(join(output_path,'Assignment%d.pdf'%assignment_num))
         
     print("assignment is generated in %2.0f seconds" % (time.time() - t))
-
-
-# In[ ]:
-
-
-
-
+    

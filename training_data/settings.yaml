@@ -1,0 +1,7 @@
+assignmentNum: 1
+assignmnetTitle: Week 1
+outputDirectory: C:\Users\ashkans\Documents\git\GAME_output
+questionDataBase: C:\Users\ashkans\Documents\git\GAME_database
+questionList:
+- A1Q1
+studentIDListFile: studentIDList.csv

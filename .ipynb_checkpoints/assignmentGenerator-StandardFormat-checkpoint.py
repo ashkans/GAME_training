@@ -132,41 +132,6 @@
    "cell_type": "code",
    "execution_count": null,
    "metadata": {},
-   "outputs": [
-    {
-     "name": "stdout",
-     "output_type": "stream",
-     "text": [
-      "assignment is generated in    8 seconds\n",
-      "assignment is generated in    7 seconds\n",
-      "assignment is generated in    7 seconds\n",
-      "assignment is generated in    7 seconds\n"
-     ]
-    }
-   ],
-   "source": [
-    "assignment_num = 9\n",
-    "\n",
-    "for sid in range(10):\n",
-    "    t = time.time()\n",
-    "    A_dir = join(output_dir,'Assignment_%s' % assignment_num)\n",
-    "    output_path = join(A_dir, 'A%d_%s' % (assignment_num, sid))\n",
-    "    if not os.path.isdir(output_path):\n",
-    "        pass\n",
-    "        #os.makedirs(output_path)\n",
-    "\n",
-    "    assignment1 = Assignment(Question_DB, assignmentTexFile=\"Colin\")\n",
-    "    assignment1.compilers = ['pdflatex', 'pythontex' , 'pdflatex']\n",
-    "    assignment1.make_assignment_pdf_from_tex_file(join(output_path,'Assignment%d.pdf'%assignment_num))\n",
-    "    \n",
-    "    \n",
-    "    print(\"assignment is generated in %2.0f seconds\" % (time.time() - t))"
-   ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": null,
-   "metadata": {},
    "outputs": [],
    "source": []
   }
