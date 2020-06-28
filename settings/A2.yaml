@@ -1,12 +1,11 @@
 assignmentNum: 2
 assignmnetTitle: Week 2
-outputDirectory: C:\Users\ashkans\Documents\git\GAME_output
-questionDataBase: C:\Users\ashkans\Documents\git\GAME_database
+outputDirectory: /home/ashkans/git/GAME_output
+questionDataBase: /home/ashkans/git/GAME_database
 questionList:
 - A2Q1
 - A2Q2
 - A2Q3
 - A2Q4
 - A2Q5
-
-studentIDListFile: C:\Users\ashkans\Documents\git\GAME_training\settings\studentIDList.csv
+studentIDListFile: /home/ashkans/git/GAME_training/settings/studentIDList.csv

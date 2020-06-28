@@ -8,9 +8,7 @@
 from GAME.assignment import Assignment
 from os.path import join
 import os, sys, time, yaml, csv
-
-
-# In[16]:
+from random import seed
 
 
 settingsFile = sys.argv[1]
@@ -45,6 +43,7 @@ sys.path.append(join(questionDataBase))
 A_dir = join(outputDirectory,'Assignment_%s' % assignmentNum)
 
 for sid in studentIDList:
+    seed(float(sid)+float(assignmentNum))
     output_path = join(A_dir, 'A%d_%s' % (assignmentNum, sid))
     if not os.path.isdir(output_path):
         os.makedirs(output_path)

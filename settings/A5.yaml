@@ -1,10 +1,8 @@
 assignmentNum: 5
 assignmnetTitle: Week 5
-outputDirectory: C:\Users\ashkans\Documents\git\GAME_output
-questionDataBase: C:\Users\ashkans\Documents\git\GAME_database
+outputDirectory: /home/ashkans/git/GAME_output
+questionDataBase: /home/ashkans/git/GAME_database
 questionList:
 - A5Q1
 - A5Q2
-
-
-studentIDListFile: C:\Users\ashkans\Documents\git\GAME_training\settings\studentIDList.csv
+studentIDListFile: /home/ashkans/git/GAME_training/settings/studentIDList.csv
