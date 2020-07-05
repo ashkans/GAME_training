@@ -51,6 +51,7 @@ for sid in studentIDList:
     os.chdir(output_path)
     # initialize the assignment class
     assignment1 = Assignment(questionDataBase, questionList,name=title ,assignment_num=assignmentNum, studentID=sid)
+    assignment1.compilers = ['pdflatex', 'pdflatex']
 
     # generate the questions
     assignment1.generate_question_list()
