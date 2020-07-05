@@ -40,6 +40,8 @@ A_dir = join(outputDirectory,'Assignment_%s' % assignmentNum)
 for studentID in studentIDList:
     output_path = join(A_dir, 'A%d_%s' % (assignmentNum, studentID))
     #load assignment
+    print(join(output_path, 'Assignment_class.yml'))
+    
     assignment = load_assignment(join(output_path, 'Assignment_class.yml'))
 
     # results path
