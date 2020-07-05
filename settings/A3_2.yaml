@@ -1,0 +1,7 @@
+assignmentNum: 32
+assignmnetTitle: Week 32
+outputDirectory: /home/ashkans/git/GAME_output
+questionDataBase: /home/ashkans/git/GAME_database
+questionList:
+- A3Q2
+studentIDListFile: /home/ashkans/git/GAME_training/settings/studentIDList.csv

@@ -48,7 +48,7 @@ for sid in studentIDList:
     if not os.path.isdir(output_path):
         os.makedirs(output_path)
 
-
+    os.chdir(output_path)
     # initialize the assignment class
     assignment1 = Assignment(questionDataBase, questionList,name=title ,assignment_num=assignmentNum, studentID=sid)
 
@@ -59,6 +59,7 @@ for sid in studentIDList:
     assignment1.save_input_files(output_path)
 
     # save save tex file1
+
     assignment1.make_assignment_pdf(join(output_path,'Assignment%d_%s.pdf'% (assignmentNum, sid)))
 
     # save assignment
