@@ -6,7 +6,7 @@ from random import seed
 from glob import glob
 import shutil
 
-filesToCopy = ['Assignment*.pdf']
+
 
 settingsFile = sys.argv[1]
 
@@ -16,6 +16,8 @@ with open(settingsFile, 'r') as file:
     
 outputDirectory = settings['outputDirectory']
 assignmentNum = settings['assignmentNum']
+filesToCopy = settings['filesToBePassedToStudents']
+
 #outputDirectory = '/home/ashkans/git/GAME_output'
 
 
