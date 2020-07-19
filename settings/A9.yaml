@@ -1,7 +1,8 @@
 assignmentNum: 9
-assignmnetTitle: Week 9
-outputDirectory: /home/ashkans/git/GAME_output
+assignmnetTitle: Deadline November 2, 5 PM
+outputDirectory: /home/ashkans/git/GAME_output_new
 questionDataBase: /home/ashkans/git/GAME_database
 questionList:
 - A9Q1
-studentIDListFile: /home/ashkans/git/GAME_training/settings/studentIDList.csv
+studentIDListFile: '/home/ashkans/git/GAME_training/settings/Grades-CIV3204_S2_2020-Assignment 1 Submission Box, Deadline August 17, 5 PM--7021387.csv'
+marksOutputPath: ./A9_marks.csv

@@ -1,13 +1,7 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[15]:
-
-
-# import modules
 from GAME.assignment import Assignment
 from os.path import join
 import os, sys, time, yaml, csv
+import pandas as pd
 from random import seed
 
 
@@ -30,9 +24,7 @@ title = settings['assignmnetTitle']
 
 questionList = settings['questionList']
 
-with open(settings['studentIDListFile']) as csvfile:
-    readCSV = csv.reader(csvfile, delimiter=',')
-    studentIDList = [r[0] for r in readCSV]
+df = pd.read_csv(settings['studentIDListFile'])
 
 
 # the questions are using some helper functions which are located in the path of Question_DB, so they should be accessible:
@@ -42,9 +34,17 @@ sys.path.append(join(questionDataBase))
 # maek sure that the output_dir exists and make the output file name
 A_dir = join(outputDirectory,'Assignment_%s' % assignmentNum)
 
-for sid in studentIDList:
+for r in df.index:
+    sid = df.loc[r, 'ID number']
+    fullName = df.loc[r,'Full name']
+    identifier = df.loc[r,'Identifier'].split(sep=' ')[1]
+    folderName = fullName + '_' + identifier + '_' + 'assignsubmission' + '_' + 'onlinetext_'
+    folderName = folderName.replace(' ', '-')
+        
+    
+    
     seed(float(sid)+float(assignmentNum))
-    output_path = join(A_dir, 'A%d_%s' % (assignmentNum, sid))
+    output_path = join(A_dir, folderName)
     if not os.path.isdir(output_path):
         os.makedirs(output_path)
 

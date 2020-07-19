@@ -26,19 +26,29 @@ assignmentNum = settings['assignmentNum']
 # name 
 title = settings['assignmnetTitle']
 
-with open(settings['studentIDListFile']) as csvfile:
-    readCSV = csv.reader(csvfile, delimiter=',')
-    studentIDList = [r[0] for r in readCSV]
 
 
+df = pd.read_csv(settings['studentIDListFile'])
+
+    
 # the questions are using some helper functions which are located in the path of Question_DB, so they should be accessible:
 sys.path.append(join(questionDataBase))
 
 
 A_dir = join(outputDirectory,'Assignment_%s' % assignmentNum)
 
-for studentID in studentIDList:
-    output_path = join(A_dir, 'A%d_%s' % (assignmentNum, studentID))
+markList = pd.DataFrame(columns=['mark', 'letter mark'])
+
+for r in df.index:
+    sid = df.loc[r, 'ID number']
+    fullName = df.loc[r,'Full name']
+    identifier = df.loc[r,'Identifier'].split(sep=' ')[1]
+    folderName = fullName + '_' + identifier + '_' + 'assignsubmission' + '_' + 'onlinetext_'
+    folderName = folderName.replace(' ', '-')
+
+    
+    
+    output_path = join(A_dir, folderName)
     #load assignment
     print(join(output_path, 'Assignment_class.yml'))
     
@@ -49,7 +59,7 @@ for studentID in studentIDList:
 
     # load the inputs
     for q in assignment.questions:
-        fnm = FileNameManager(studentID, assignmentNum, q.qid)
+        fnm = FileNameManager(sid, assignmentNum, q.qid)
         q.text.inputs = q.marking.input_loader(join(output_path,fnm.getInputFileName()))
         resutls_path.append(join(output_path,fnm.getAnswerFileName()))
 
@@ -59,3 +69,10 @@ for studentID in studentIDList:
     # write the feedback file
     assignment.make_feedback_pdf(join(output_path,fnm.feedbackFileName()), name=title ,assignment_num=assignmentNum-1)
 
+    markList.loc[sid, 'mark'] = assignment.mark
+    markList.loc[sid, 'letter mark'] = assignment.letterMark
+
+if 'marksOutputPath' in settings.keys():
+    markList.to_csv(settings['marksOutputPath'])
+else:
+    markList.to_csv('marks.csv')
