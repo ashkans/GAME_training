@@ -47,6 +47,13 @@ for student_dir in studentDirList:
             dist = join(new_student_dir, basename(f2c))
             shutil.copy2(f2c, dist)
         
+        # copy static files
+         
+        if 'staticFiles' in settings.keys():
+            for sf in settings['staticFiles']:
+                shutil.copy2(sf, new_student_dir)
+                
+        
 
 
 

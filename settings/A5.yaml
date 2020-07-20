@@ -10,3 +10,6 @@ marksOutputPath: ./A5_marks.csv
 filesToBePassedToStudents:
 - 'Assignment*.pdf'
 - 'input*.csv'
+staticFiles:
+- /home/ashkans/git/GAME_database/A5Q1/result_maker/gui_q1.zip
+- /home/ashkans/git/GAME_database/A5Q2/result_maker/gui_q2.zip
