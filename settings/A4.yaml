@@ -8,7 +8,7 @@ questionList:
 - A4Q3
 - A4Q4
 - A4Q5
-studentIDListFile: '/home/ashkans/git/GAME_training/settings/Grades-CIV3204_S2_2020-Assignment 1 Submission Box, Deadline August 17, 5 PM--7021387.csv'
+studentIDListFile: '/home/ashkans/git/GAME_training/settings/Grades-CIV3204_S2_2020-Assignment 4 Submission Box, Deadline September 7, 5 PM--7021390.csv'
 marksOutputPath: ./A4_marks.csv
 filesToBePassedToStudents:
 - 'Assignment*.pdf'

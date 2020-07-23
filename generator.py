@@ -38,7 +38,7 @@ for r in df.index:
     sid = df.loc[r, 'ID number']
     fullName = df.loc[r,'Full name']
     identifier = df.loc[r,'Identifier'].split(sep=' ')[1]
-    folderName = fullName + '_' + identifier + '_' + 'assignsubmission' + '_' + 'onlinetext_'
+    folderName = fullName + '_' + identifier + '_' + 'assignsubmission' + '_' + 'file_'
     folderName = folderName.replace(' ', '-')
         
     

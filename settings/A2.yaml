@@ -8,12 +8,13 @@ questionList:
 - A2Q3
 - A2Q4
 - A2Q5
-studentIDListFile: '/home/ashkans/git/GAME_training/settings/Grades-CIV3204_S2_2020-Assignment 1 Submission Box, Deadline August 17, 5 PM--7021387.csv'
+studentIDListFile: '/home/ashkans/git/GAME_training/settings/Grades-CIV3204_S2_2020-Assignment 2 Submission Box, Deadline August 24, 5 PM--7021388.csv'
 marksOutputPath: A2_marks.csv
 filesToBePassedToStudents:
 - 'Assignment*.pdf'
 - 'input*.csv'
 staticFiles:
 - /home/ashkans/git/GAME_database/A2Q1/result_maker/gui.zip
+- /home/ashkans/git/GAME_database/A2Q1/files/equation_options.pdf
 - /home/ashkans/git/GAME_database/A2Q5/result_maker/gui_q5.zip
 
