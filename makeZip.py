@@ -34,7 +34,7 @@ studentDirList = glob(join(A_dir, '*'))
 for student_dir in studentDirList:
     for f in filesToCopy:
         student_dir_basename = dirname(student_dir)
-        new_student_dir_basename = basename(student_dir).replace('-', ' ')
+        new_student_dir_basename = basename(student_dir)#.replace('-', ' ')
         
         new_student_dir = join(toMoodleDir, new_student_dir_basename)
         

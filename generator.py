@@ -3,6 +3,7 @@ from os.path import join
 import os, sys, time, yaml, csv
 import pandas as pd
 from random import seed
+import numpy as np
 
 
 settingsFile = sys.argv[1]
@@ -35,15 +36,14 @@ sys.path.append(join(questionDataBase))
 A_dir = join(outputDirectory,'Assignment_%s' % assignmentNum)
 
 for r in df.index:
-    sid = df.loc[r, 'ID number']
+    sid = df.loc[r, 'ID number'].item()
     fullName = df.loc[r,'Full name']
     identifier = df.loc[r,'Identifier'].split(sep=' ')[1]
     folderName = fullName + '_' + identifier + '_' + 'assignsubmission' + '_' + 'file_'
-    folderName = folderName.replace(' ', '-')
-        
     
     
-    seed(float(sid)+float(assignmentNum))
+    seed(sid)
+    np.random.seed(sid)
     output_path = join(A_dir, folderName)
     if not os.path.isdir(output_path):
         os.makedirs(output_path)

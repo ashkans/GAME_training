@@ -11,4 +11,5 @@ filesToBePassedToStudents:
 - 'input*.csv'
 staticFiles:
 - /home/ashkans/git/GAME_database/A1Q1/result_maker/gui.zip
+studentResultsFolder: '/home/ashkans/git/studentResults/CIV3204_S2_2020-Assignment 1 Submission Box, Deadline August 17, 5 PM-7021387'
 
