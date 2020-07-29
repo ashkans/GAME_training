@@ -40,7 +40,7 @@ sys.path.append(join(questionDataBase))
 
 A_dir = join(outputDirectory,'Assignment_%s' % assignmentNum)
 
-markList = pd.DataFrame(columns=['mark', 'letter mark'])
+markList = pd.DataFrame(columns=['mark', 'letter mark', 'full name'])
 
 for r in df.index:
     sid = df.loc[r, 'ID number']
@@ -55,8 +55,6 @@ for r in df.index:
     outoutList = glob(output_path_pattern)
     if len(outoutList) != 0:
         studentResultsFolder_folderName = os.path.basename(outoutList[0])
-        
-        
         
         output_path = join(A_dir, output_folderName)
         result_path = join(studentResultsFolder, studentResultsFolder_folderName)
@@ -81,8 +79,9 @@ for r in df.index:
         feedbackPath = result_path
         if not os.path.isdir(feedbackPath):
             os.makedirs(feedbackPath)    
-        assignment.make_feedback_pdf(join(feedbackPath,fnm.feedbackFileName()), name=title ,assignment_num=assignmentNum-1)
-    
+        assignment.make_feedback_pdf(join(feedbackPath,fnm.feedbackFileName()), name=title ,assignment_num=assignmentNum)
+        
+        markList.loc[sid, 'full name'] = fullName
         markList.loc[sid, 'mark'] = assignment.mark
         markList.loc[sid, 'letter mark'] = assignment.letterMark
 
