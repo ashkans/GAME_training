@@ -26,10 +26,6 @@ studentResultsFolder = settings['studentResultsFolder']
 assignmentNum = settings['assignmentNum']
 # name 
 title = settings['assignmnetTitle']
-
-
-
-        
         
 df = pd.read_csv(settings['studentIDListFile'])
 
