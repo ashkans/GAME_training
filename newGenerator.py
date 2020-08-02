@@ -1,9 +1,10 @@
 import pandas as pd
+import sys
 from helper import (folderNameGenerator, setSeed, makeMasterFolder,
                     makeSubsetDir, initialize)
 
-#settingsFile = sys.argv[1]
-settingsFile = r'settings/Assign1.yaml'
+settingsFile = sys.argv[1]
+#settingsFile = r'settings/Assign1.yaml'
 
 studentIdListPath, dbPath, masterPath, settings = initialize(settingsFile)
 

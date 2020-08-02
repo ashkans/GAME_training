@@ -1,17 +1,19 @@
 assignmentNum: 1
 assignmnetTitle: 'Deadline August 17, 5 PM'
 basePath: '/home/ashkans/git/'
-assginmentMasterDirectory: 'GAME_output_new/Assignment1/'
-resultDirectory: 'studentResults/Assignment1_submission/'
 
 questionDatabaseDirectory: 'GAME_database/'
 
 questionList:
 - A1Q1
 
+assginmentMasterDirectory: 'GAME_output_new/Assignment1/'
+resultDirectory: 'studentResults/Assignment1_submission/'
+
+
 studentIDListFile: 'GAME_training/settings/Grades-CIV3204_S2_2020-Assignment 1 Submission Box, Deadline August 17, 5 PM--7021387.csv'
 
-marksOutputPath: 'A1_marks.csv'
+marksOutputPath: 'studentResults/A1_marks.csv'
 
 
 assginmentSubsetDirectory: 

@@ -4,8 +4,10 @@ from helper import (folderNameGenerator, setSeed, makeMasterFolder,
 from os.path import join
 from GAME.assignment import  load_assignment
 from GAME.fileNameManager import FileNameManager
-#settingsFile = sys.argv[1]
-settingsFile = r'settings/Assign1.yaml'
+import sys
+
+settingsFile = sys.argv[1]
+#settingsFile = r'settings/Assign1.yaml'
 
 studentIdListPath, dbPath, masterPath, settings = initialize(settingsFile)
 
@@ -67,8 +69,9 @@ for index, student in df.T.items():
         makeSubsetDir(resPath, studentResultFolderName, fsd, settings['basePath']) 
         
 if 'marksOutputPath' in settings.keys():
-    markList.to_csv(settings['marksOutputPath'])
+    path_to_save = pathModifier(settings['basePath'], settings['marksOutputPath']) 
+    markList.to_csv(settings['path_to_save'])
 else:
-    markList.to_csv('marks.csv')        
+    markList.to_csv('marks.csv')
 
 print(markList)    
