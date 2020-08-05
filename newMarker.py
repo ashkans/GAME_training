@@ -70,7 +70,7 @@ for index, student in df.T.items():
         
 if 'marksOutputPath' in settings.keys():
     path_to_save = pathModifier(settings['basePath'], settings['marksOutputPath']) 
-    markList.to_csv(settings['marksOutputPath'])
+    markList.to_csv(path_to_save)
 else:
     markList.to_csv('marks.csv')
 
