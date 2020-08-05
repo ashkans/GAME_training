@@ -27,7 +27,7 @@ assginmentSubsetDirectory:
   filesToBePassed:
     - 'Assignment*.pdf'
     - 'input*.csv' 
-    staticFiles:
+  staticFiles:
     - 'GAME_database/A2Q1/result_maker/gui.zip'
     - 'GAME_database/A2Q1/files/equation_options.pdf'
     - 'GAME_database/A2Q5/result_maker/gui_q5.zip'
