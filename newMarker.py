@@ -20,7 +20,7 @@ fsd = settings['feedbackSubsetDirectory']
 
 # load student list
 df = pd.read_csv(studentIdListPath)
-markList = pd.DataFrame(columns=['mark', 'letter mark', 'full name'])
+markList = pd.DataFrame(columns=['full name', 'mark', 'letter mark'] + settings['questionList'])
        
 # loop over the lines of df
 for index, student in df.T.items():
@@ -62,6 +62,8 @@ for index, student in df.T.items():
         
         markList.loc[sid, 'full name'] = student['Full name']
         markList.loc[sid, 'mark'] = assignment.mark
+        for i, qid in enumerate(settings['questionList']):
+            markList.loc[sid, qid] = assignment.marks[i]
         markList.loc[sid, 'letter mark'] = assignment.letterMark
 
 
