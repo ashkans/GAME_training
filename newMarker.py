@@ -5,6 +5,8 @@ from os.path import join
 from GAME.assignment import  load_assignment
 from GAME.fileNameManager import FileNameManager
 import sys
+from matplotlib import pyplot as plt
+import numpy as np
 
 settingsFile = sys.argv[1]
 #settingsFile = r'settings/Assign1.yaml'
@@ -68,15 +70,26 @@ for index, student in df.T.items():
 
         markList.loc[sid, 'email'] = student['Email address']
 
-
+            
 
         
         makeSubsetDir(resPath, studentResultFolderName, fsd, settings['basePath']) 
+
+fig = plt.figure(figsize=(10,10))
+ax = plt.subplot(1,1,1)
+markList.plot.kde(ax=ax, bw_method=0.5, ind=np.linspace(0,100,num=100))
+
+
         
 if 'marksOutputPath' in settings.keys():
     path_to_save = pathModifier(settings['basePath'], settings['marksOutputPath']) 
     markList.to_csv(path_to_save)
+    
+    path_to_save = pathModifier(settings['basePath'], 'marks.png') 
+    fig.savefig(path_to_save)
 else:
     markList.to_csv('marks.csv')
+    fig.savefig('marks.png')
 
-print(markList)    
+print(markList) 
+print(path_to_save)   
