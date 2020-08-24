@@ -27,6 +27,7 @@ markList = pd.DataFrame(columns=['full name', 'mark', 'letter mark', 'email'] + 
 # loop over the lines of df
 for index, student in df.T.items():
     sid = student['ID number']
+    print(student['Full name'])
     studentMasterFolderName = folderNameGenerator(student)
     studentResultFolderName = findStudentFolder(student, resPath)
     
@@ -77,7 +78,7 @@ for index, student in df.T.items():
 
 fig = plt.figure(figsize=(10,10))
 ax = plt.subplot(1,1,1)
-markList.plot.kde(ax=ax, bw_method=0.5, ind=np.linspace(0,100,num=100))
+#markList.plot.kde(ax=ax, bw_method=0.5, ind=np.linspace(0,100,num=100))
 
 
         

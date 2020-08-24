@@ -1,0 +1,40 @@
+assignmentNum: 4
+assignmnetTitle: 'Deadline September 7, 5 PM'
+basePath: '/home/ashkans/git/'
+
+questionDatabaseDirectory: 'GAME_database/'
+
+questionList:
+- A4Q1
+- A4Q2
+- A4Q3
+- A4Q4
+- A4Q5
+
+assginmentMasterDirectory: 'GAME_output_new/Assignment4/'
+resultDirectory: 'studentResults/Assignment4_submission/'
+
+
+studentIDListFile: 'GAME_training/settings/Grades-CIV3204_S2_2020-Assignment 4 Submission Box, Deadline September 7, 5 PM--7021390.csv'
+
+marksOutputPath: 'studentResults/A4_marks.csv'
+
+
+assginmentSubsetDirectory: 
+  enabled: True
+  suffix: 'to_moodle'
+  filesToBePassed:
+    - 'Assignment*.pdf'
+    - 'input*.csv' 
+  staticFiles:
+    - 'GAME_database/A4Q1/result_maker/gui_q1.zip'
+    - 'GAME_database/A4Q2/result_maker/gui_q2.zip'
+    - 'GAME_database/A4Q3/result_maker/gui_q3.zip'
+    - 'GAME_database/A4Q4/result_maker/gui_q4.zip'
+
+feedbackSubsetDirectory: 
+  enabled: True
+  suffix: 'feedback_to_moodle'
+  filesToBePassed:
+    - 'feedback*.pdf'
+    

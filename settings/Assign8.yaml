@@ -1,0 +1,33 @@
+assignmentNum: 8
+assignmnetTitle: 'Deadline October 26, 5 PM'
+basePath: '/home/valentijn/OFFICIAL/CIV3204_marking/'
+
+questionDatabaseDirectory: 'GAME_database/'
+
+questionList:
+- A8Q1
+
+assginmentMasterDirectory: 'GAME_output_new/Assignment8/'
+resultDirectory: 'studentResults/Assignment8_submission/'
+
+
+studentIDListFile: 'GAME_training/settings/Grades-CIV3204_S2_2020-Assignment 8 Submission Box, Deadline October 26, 5 PM--7333735.csv'
+
+marksOutputPath: 'studentResults/A8_marks.csv'
+
+
+assginmentSubsetDirectory: 
+  enabled: True
+  suffix: 'to_moodle'
+  filesToBePassed:
+    - 'Assignment*.pdf'
+    - 'input*.csv' 
+  staticFiles:
+    - 'GAME_database/A8Q1/result_maker/gui_q1.zip'
+
+feedbackSubsetDirectory: 
+  enabled: True
+  suffix: 'feedback_to_moodle'
+  filesToBePassed:
+    - 'feedback*.pdf'
+    

@@ -1,0 +1,41 @@
+assignmentNum: 6
+assignmnetTitle: 'Deadline September 21, 5 PM'
+basePath: '/home/valentijn/OFFICIAL/CIV3204_marking/'
+
+questionDatabaseDirectory: 'GAME_database/'
+
+questionList:
+- A6Q1
+- A6Q2
+- A6Q3
+- A6Q4
+- A6Q5
+
+assginmentMasterDirectory: 'GAME_output_new/Assignment6/'
+resultDirectory: 'studentResults/Assignment6_submission/'
+
+
+studentIDListFile: 'GAME_training/settings/Grades-CIV3204_S2_2020-Assignment 6 Submission Box, Deadline September 21, 5 PM--7333727.csv'
+
+marksOutputPath: 'studentResults/A6_marks.csv'
+
+
+assginmentSubsetDirectory: 
+  enabled: True
+  suffix: 'to_moodle'
+  filesToBePassed:
+    - 'Assignment*.pdf'
+    - 'input*.csv' 
+  staticFiles:
+    - 'GAME_database/A6Q1/result_maker/gui_q1.zip'
+    - 'GAME_database/A6Q2/result_maker/gui_q2.zip'
+    - 'GAME_database/A6Q3/result_maker/gui_q3.zip'
+    - 'GAME_database/A6Q4/result_maker/gui_q4.zip'
+    - 'GAME_database/A6Q5/result_maker/gui_q5.zip'
+
+feedbackSubsetDirectory: 
+  enabled: True
+  suffix: 'feedback_to_moodle'
+  filesToBePassed:
+    - 'feedback*.pdf'
+    
