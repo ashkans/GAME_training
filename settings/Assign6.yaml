@@ -1,6 +1,6 @@
 assignmentNum: 6
 assignmnetTitle: 'Deadline September 21, 5 PM'
-basePath: '/home/valentijn/OFFICIAL/CIV3204_marking/'
+basePath: '/home/ashkans/git/'
 
 questionDatabaseDirectory: 'GAME_database/'
 
@@ -9,7 +9,6 @@ questionList:
 - A6Q2
 - A6Q3
 - A6Q4
-- A6Q5
 
 assginmentMasterDirectory: 'GAME_output_new/Assignment6/'
 resultDirectory: 'studentResults/Assignment6_submission/'

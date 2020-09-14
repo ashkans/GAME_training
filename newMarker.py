@@ -34,11 +34,8 @@ for index, student in df.T.items():
     if studentResultFolderName is not None:
         studentMasterPath = join(masterPath, studentMasterFolderName)
         studentResultPath = join(resPath, studentResultFolderName)
-        
-    
         assignment = load_assignment(join(studentMasterPath, 'Assignment_class.yml'))
  
-    
         # results path
         resutls_path = []
     
@@ -50,6 +47,8 @@ for index, student in df.T.items():
             
             studentResultFilePath = join(studentResultPath,fnm.getAnswerFileName())
             resutls_path.append(studentResultFilePath)
+        
+            
     
         # get feedback and mark
         assignment.mark_and_get_feedbacks(resutls_path)
