@@ -1,0 +1,43 @@
+assignmentNum: 1
+assignmnetTitle: 'Final Assessment'
+basePath: '/home/vpauwels/GAME/'
+
+questionDatabaseDirectory: 'GAME_database/'
+
+questionList:
+- E1Q1
+- E1Q2
+- E1Q3
+- E1Q4
+- E1Q5
+- E1Q6
+
+assginmentMasterDirectory: 'GAME_output_new/Exam1/'
+resultDirectory: 'studentResults/Exam1_submission/'
+
+
+studentIDListFile: 'GAME_training/settings/Grades-CIV3204_S2_2020-Assignment 9 Submission Box, Deadline November 2, 5 PM--7333738.csv'
+
+marksOutputPath: 'studentResults/E1_marks.csv'
+
+
+assginmentSubsetDirectory: 
+  enabled: True
+  suffix: 'to_moodle'
+  filesToBePassed:
+    - 'instructions.pdf'
+    - 'Assignment*.pdf'
+    - 'input*E1Q6.csv' 
+  staticFiles:
+    - 'GAME_database/E1Q1/result_maker/E1Q1gui.zip'
+    - 'GAME_database/E1Q2/result_maker/E1Q2gui.zip'
+    - 'GAME_database/E1Q3/result_maker/E1Q3gui.zip'
+    - 'GAME_database/E1Q4/result_maker/E1Q4gui.zip'
+    - 'GAME_database/E1Q6/result_maker/E1Q6gui.zip'
+
+feedbackSubsetDirectory: 
+  enabled: True
+  suffix: 'feedback_to_moodle'
+  filesToBePassed:
+    - 'feedback*.pdf'
+    

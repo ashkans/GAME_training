@@ -1,6 +1,6 @@
 assignmentNum: 2
 assignmnetTitle: 'Deadline August 24, 5 PM'
-basePath: '/home/ashkans/git/'
+basePath: '/home/vpauwels/GAME/'
 
 questionDatabaseDirectory: 'GAME_database/'
 
@@ -26,9 +26,9 @@ assginmentSubsetDirectory:
   suffix: 'to_moodle'
   filesToBePassed:
     - 'Assignment*.pdf'
-    - 'input*.csv' 
   staticFiles:
-    - 'GAME_database/A2Q1/result_maker/gui.zip'
+    - 'GAME_database/A2Q1/result_maker/gui2_1.zip'
+    - 'GAME_database/A2Q1/result_maker/gui2_2.zip'
     - 'GAME_database/A2Q1/files/equation_options.pdf'
     - 'GAME_database/A2Q5/result_maker/gui_q5.zip'
 

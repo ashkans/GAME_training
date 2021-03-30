@@ -1,0 +1,45 @@
+assignmentNum: 2
+assignmnetTitle: 'Final Assessment'
+basePath: '/home/vpauwels/GAME/'
+
+questionDatabaseDirectory: 'GAME_database/'
+
+questionList:
+- E2Q1
+- E2Q2
+- E2Q3
+- E2Q4
+- E2Q5
+- E2Q6
+- E2Q7
+
+assginmentMasterDirectory: 'GAME_output_new/Exam2/'
+resultDirectory: 'studentResults/Exam2_submission/'
+
+
+studentIDListFile: 'GAME_training/settings/test2.csv'
+
+marksOutputPath: 'studentResults/E2_marks.csv'
+
+
+assginmentSubsetDirectory: 
+  enabled: True
+  suffix: 'to_moodle'
+  filesToBePassed:
+    - 'Assignment2*.pdf'
+    - 'input*_A2_E2Q6.csv' 
+  staticFiles:
+    - 'GAME_database/E2Q1/result_maker/E2Q1gui.zip'
+    - 'GAME_database/E2Q2/result_maker/E2Q2gui.zip'
+    - 'GAME_database/E2Q3/result_maker/E2Q3gui.zip'
+    - 'GAME_database/E2Q4/result_maker/E2Q4gui.zip'
+    - 'GAME_database/E2Q6/result_maker/E2Q6gui.zip'
+    - 'GAME_database/E2Q1/files/instructions.pdf'
+    - 'GAME_database/E2Q1/files/equation_options_final_assessment.pdf'
+
+feedbackSubsetDirectory: 
+  enabled: True
+  suffix: 'feedback_to_moodle'
+  filesToBePassed:
+    - 'feedback*.pdf'
+    
