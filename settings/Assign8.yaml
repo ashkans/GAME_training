@@ -1,5 +1,5 @@
 assignmentNum: 8
-assignmnetTitle: 'Deadline October 26, 5 PM'
+assignmnetTitle: 'Deadline September 24, 5 PM'
 basePath: '/home/vpauwels/GAME/'
 
 questionDatabaseDirectory: 'GAME_database/'
@@ -23,7 +23,7 @@ assginmentSubsetDirectory:
     - 'Assignment*.pdf'
     - 'input*.csv' 
   staticFiles:
-    - 'GAME_database/A8Q1/result_maker/gui_q1.zip'
+    - 'GAME_database/A8Q1/result_maker/A8Q1gui.html'
 
 feedbackSubsetDirectory: 
   enabled: True

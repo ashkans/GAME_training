@@ -1,0 +1,33 @@
+assignmentNum: 10
+assignmnetTitle: 'Deadline October 15, 5 PM'
+basePath: '/home/vpauwels/GAME/'
+
+questionDatabaseDirectory: 'GAME_database/'
+
+questionList:
+- A10Q1
+
+assginmentMasterDirectory: 'GAME_output_new/Assignment10/'
+resultDirectory: 'studentResults/Assignment10_submission/'
+
+
+studentIDListFile: 'GAME_training/settings/Grades-CIV3204_S2_2020-Assignment 10 Submission Box, Deadline November 2, 5 PM--7333738.csv'
+
+marksOutputPath: 'studentResults/A10_marks.csv'
+
+
+assginmentSubsetDirectory: 
+  enabled: True
+  suffix: 'to_moodle'
+  filesToBePassed:
+    - 'Assignment*.pdf'
+    - 'input*.csv' 
+  staticFiles:
+    - 'GAME_database/A10Q1/result_maker/A10Q1gui.html'
+
+feedbackSubsetDirectory: 
+  enabled: True
+  suffix: 'feedback_to_moodle'
+  filesToBePassed:
+    - 'feedback*.pdf'
+    

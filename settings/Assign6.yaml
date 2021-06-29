@@ -1,5 +1,5 @@
 assignmentNum: 6
-assignmnetTitle: 'Deadline September 21, 5 PM'
+assignmnetTitle: 'Deadline September 10, 5 PM'
 basePath: '/home/vpauwels/GAME/'
 
 questionDatabaseDirectory: 'GAME_database/'
@@ -9,6 +9,7 @@ questionList:
 - A6Q2
 - A6Q3
 - A6Q4
+- A6Q5
 
 assginmentMasterDirectory: 'GAME_output_new/Assignment6/'
 resultDirectory: 'studentResults/Assignment6_submission/'
@@ -26,11 +27,11 @@ assginmentSubsetDirectory:
     - 'Assignment*.pdf'
     - 'input*.csv' 
   staticFiles:
-    - 'GAME_database/A6Q1/result_maker/gui_q1.zip'
-    - 'GAME_database/A6Q2/result_maker/gui_q2.zip'
-    - 'GAME_database/A6Q3/result_maker/gui_q3.zip'
-    - 'GAME_database/A6Q4/result_maker/gui_q4.zip'
-    - 'GAME_database/A6Q5/result_maker/gui_q5.zip'
+    - 'GAME_database/A6Q1/result_maker/A6Q1gui.html'
+    - 'GAME_database/A6Q2/result_maker/A6Q2gui.html'
+    - 'GAME_database/A6Q3/result_maker/A6Q3gui.html'
+    - 'GAME_database/A6Q4/result_maker/A6Q4gui.html'
+    - 'GAME_database/A6Q5/result_maker/A6Q5gui.html'
 
 feedbackSubsetDirectory: 
   enabled: True

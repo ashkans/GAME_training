@@ -1,5 +1,5 @@
 assignmentNum: 5
-assignmnetTitle: 'Deadline September 14, 5 PM'
+assignmnetTitle: 'Deadline September 3, 5 PM'
 basePath: '/home/vpauwels/GAME/'
 
 questionDatabaseDirectory: 'GAME_database/'
@@ -7,6 +7,8 @@ questionDatabaseDirectory: 'GAME_database/'
 questionList:
 - A5Q1
 - A5Q2
+- A5Q3
+- A5Q4
 
 assginmentMasterDirectory: 'GAME_output_new/Assignment5/'
 resultDirectory: 'studentResults/Assignment5_submission/'
@@ -22,10 +24,11 @@ assginmentSubsetDirectory:
   suffix: 'to_moodle'
   filesToBePassed:
     - 'Assignment*.pdf'
-    - 'input*.csv' 
   staticFiles:
-    - 'GAME_database/A5Q1/result_maker/gui_q1.zip'
-    - 'GAME_database/A5Q2/result_maker/gui_q2.zip'
+    - 'GAME_database/A5Q1/result_maker/A5Q1gui.html'
+    - 'GAME_database/A5Q2/result_maker/A5Q2gui.html'
+    - 'GAME_database/A5Q3/result_maker/A5Q3gui.html'
+    - 'GAME_database/A5Q4/result_maker/A5Q4gui.html'
 
 feedbackSubsetDirectory: 
   enabled: True

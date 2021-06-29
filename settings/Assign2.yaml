@@ -1,5 +1,5 @@
 assignmentNum: 2
-assignmnetTitle: 'Deadline August 24, 5 PM'
+assignmnetTitle: 'Deadline August 13, 5 PM'
 basePath: '/home/vpauwels/GAME/'
 
 questionDatabaseDirectory: 'GAME_database/'
@@ -27,10 +27,12 @@ assginmentSubsetDirectory:
   filesToBePassed:
     - 'Assignment*.pdf'
   staticFiles:
-    - 'GAME_database/A2Q1/result_maker/gui2_1.zip'
-    - 'GAME_database/A2Q1/result_maker/gui2_2.zip'
+    - 'GAME_database/A2Q1/result_maker/A2Q1gui.html'
+    - 'GAME_database/A2Q2/result_maker/A2Q2gui.html'
+    - 'GAME_database/A2Q3/result_maker/A2Q3gui.html'
+    - 'GAME_database/A2Q4/result_maker/A2Q4gui.html'
     - 'GAME_database/A2Q1/files/equation_options.pdf'
-    - 'GAME_database/A2Q5/result_maker/gui_q5.zip'
+    - 'GAME_database/A2Q5/result_maker/A2Q5gui.html'
 
 feedbackSubsetDirectory: 
   enabled: True

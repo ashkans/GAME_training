@@ -12,12 +12,13 @@ questionList:
 - E2Q5
 - E2Q6
 - E2Q7
+- E2Q8
 
 assginmentMasterDirectory: 'GAME_output_new/Exam2/'
 resultDirectory: 'studentResults/Exam2_submission/'
 
 
-studentIDListFile: 'GAME_training/settings/Grades-CIV3204_S2_2020-SupplementaryDeferred Final Assessment Download and Submission Box--8018860.csv'
+studentIDListFile: 'GAME_training/settings/Exam2.csv'
 
 marksOutputPath: 'studentResults/E2_marks.csv'
 
@@ -26,14 +27,12 @@ assginmentSubsetDirectory:
   enabled: True
   suffix: 'to_moodle'
   filesToBePassed:
-    - 'Assignment2*.pdf'
-    - 'input*_A2_E2Q6.csv' 
+    - 'Assignment*.pdf'
   staticFiles:
-    - 'GAME_database/E2Q1/result_maker/E2Q1gui.zip'
-    - 'GAME_database/E2Q2/result_maker/E2Q2gui.zip'
-    - 'GAME_database/E2Q3/result_maker/E2Q3gui.zip'
-    - 'GAME_database/E2Q4/result_maker/E2Q4gui.zip'
-    - 'GAME_database/E2Q6/result_maker/E2Q6gui.zip'
+    - 'GAME_database/E2Q1/result_maker/E2Q1gui.html'
+    - 'GAME_database/E2Q2/result_maker/E2Q2gui.html'
+    - 'GAME_database/E2Q3/result_maker/E2Q3gui.html'
+    - 'GAME_database/E2Q4/result_maker/E2Q4gui.html'
     - 'GAME_database/E2Q1/files/instructions.pdf'
     - 'GAME_database/E2Q1/files/equation_options_final_assessment.pdf'
 
